@@ -1,0 +1,74 @@
+/* General Styles */
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* All styles related to the Header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* All styles related to the About Me section */
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;  
+}
+
+/* All styles related to the My Projects section */
+
+.project-showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card img {
+    height: 125px;
+    width: 125px;
+}
+
+/* All styles related to the My Skills section */
+
+.skill-showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* All styles related to the Resume Request section */
+
+.resume-request {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* All styles related to the Footer section */
+.footer {
+    display: flex;
+}
