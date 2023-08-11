@@ -3,6 +3,8 @@ This is a landing page which will showcase projects made by Tommy's Repos.
 
 Changelog (MM/DD/YY):
 
+    08/11/23 - Added google font family 'Roboto' Added multiple styles to html elements. Changed background colours, font size, font weight, colours, simple hover animations. Added padding where necessary.
+
     08/10/23 - Created a rough layout of all html elements using flexbox.
 
     08/10/23 - Added a folder to store images for the project. Created html elements for contact information and showcasing projects. 
