@@ -3,6 +3,8 @@ This is a landing page which will showcase projects made by Tommy's Repos.
 
 Changelog (MM/DD/YY):
 
+08/14/23 - Added github pages link to first project, Hasenhuttl.
+
 08/11/23 - Created logo and profile picture with LogoMakr. Gave credit to LogoMakr and linked to website in footer. Replaced logo and profile picture placeholders. Added images to image folder.
 
 08/11/23 - Added google font family 'Roboto' Added multiple styles to html elements. Changed background colours, font size, font weight, colours, simple hover animations. Added padding where necessary.

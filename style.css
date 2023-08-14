@@ -109,7 +109,7 @@ a:hover {
 .project-cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 100px;
 }
 
 .card {
@@ -133,6 +133,7 @@ a:hover {
 .card p {
     color: #1F2937;
     font-size: 18px;
+    display: flex;  
 }
 
 /* All styles related to the My Skills section */
