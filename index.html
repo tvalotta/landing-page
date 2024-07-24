@@ -6,49 +6,76 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="header">
-        <div class="left-links">
-            <img src="images/TR-logo.png" alt="The logo for Tommy's Repos">
-        </div>
         <div class="right-links">
-            <a href="">Github</a>
-            <a href="">Gmail</a>
-            <a href="">Twitter</a>
+            <a href="#projects">Projects</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#skills">Skills</a>
         </div>
     </div>
     <div class="about-me">
         <div class="info-container">
-            <h1>Tommy's Repos</h1>
-            <p>Welcome to this page. I will write things about myself here!</p>
-            <button type="button" class="email-button">Email Me</button>
+            <h1>Thomas Valotta</h1>
+            <p>IT professional. </p>
+            <button type="button" class="email-button">Contact Me</button>
         </div>
         <div class="profile-image">
-            <img src="images/TR-pfp-larger.png" alt="Profile picture for Tommy's Repos.">
+            <img src="images/repair_tech.png" alt="Profile picture for Tommy's Repos.">
         </div>
     </div>
-    <div class="project-showcase">
+
+    <div class="spacer layer"></div>
+
+    <div class="project-showcase" id="projects">
         <h1>My Projects</h1>
         <div class="project-cards">
-            <div class="card"> <a href="https://tommysrepos.github.io/Hasenhuttl/" target="_blank" rel="noreferrer noopener"><img src="images/hasenhuttl-icon-2.png" alt=" An icon for the web app Hasenhuttl."></a><p>Info about this project.</p> </div>
+            <div class="card"> <a href="business-network.html" target="_blank" rel="noreferrer noopener"><img src="./images/business-network.svg" alt=" An icon for the web app Hasenhuttl."></a><p>Business network simulation.</p> </div>
             <div class="card"> <a href="" target="_blank" rel="noreferrer noopener"><img src="images/placeholder-profile-image.png" alt=" A placeholder image for one of Tommy's Repos projects."></a><p>Info about this project.</p> </div>
             <div class="card"> <a href="" target="_blank" rel="noreferrer noopener"><img src="images/placeholder-profile-image.png" alt=" A placeholder image for one of Tommy's Repos projects."></a><p>Info about this project.</p> </div>
             <div class="card"> <a href="" target="_blank" rel="noreferrer noopener"><img src="images/placeholder-profile-image.png" alt=" A placeholder image for one of Tommy's Repos projects."></a><p>Info about this project.</p> </div>
         </div>
     </div>
-    <div class="skill-showcase">
+
+    <div class="spacer second-layer"></div>
+
+    <div class="certifications-showcase" id="certifications">
+        <h1>My Certifications</h1>
+        <div class="project-cards">
+            <div class="card"> <a href="" target="_blank" rel="noreferrer noopener"><img src="./images/CompTIA-A-logo.png" alt=" A placeholder image for one of Tommy's Repos projects."></a><p>CompTIA A+</p> </div>
+            <div class="card"> <a href="" target="_blank" rel="noreferrer noopener"><img src="images/placeholder-profile-image.png" alt=" A placeholder image for one of Tommy's Repos projects."></a><p>Certification Name</p> </div>
+        </div>
+        
+    </div>
+
+    <div class="spacer third-layer"></div>
+
+    <div class="skills-showcase" id="skills">
         <h1>My Skills</h1>
-        <p>I plan on creating cards which list my skills than you can cycle through by clicking on a left or right arrow on either side of the card.</p>
-    </div>
-    <div class="resume-request">
-        <div class="form-container">
-            <div class="resume-text">
-                <h2>If you are based out of Canada and interested in seeing my resume...</h2>
-                <p>Please fill out the following form with your name and company email. My resume will be sent to you shortly!</p>
-            </div>
+
+        <div class="carousel" data-carousel>
+            <button class="carousel-button previous" data-carousel-button="previous">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="carousel-button next" data-carousel-button="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="images/placeholder-profile-image.png" alt="">
+                </li>
+                <li class="slide">
+                    <img src="./images/CompTIA-A-logo.png" alt="">
+                </li>
+                <li class="slide">
+                    <img src="images/placeholder-profile-image.png" alt="">
+                </li>
+            </ul>
         </div>
     </div>
+
     <div class="footer">
         <div class="footer-left-links">
 

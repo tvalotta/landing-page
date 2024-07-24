@@ -18,13 +18,34 @@ label {
     font-family: Roboto;
 }
 
+.spacer{
+    aspect-ratio: 960/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer{
+    background-image: url('./images/layered-waves-haikei.svg');
+}
+
+.second-layer{
+    background-image: url('./images/second-spacer.svg');
+}
+
+.third-layer{
+    background-image: url('./images/third-spacer.svg');
+}
+
 /* All styles related to the Header */
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
     background-color: #1F2937;
+    padding-top: 1rem;
 }
 
 .header a {
@@ -62,8 +83,8 @@ a:hover {
 }
 
 .about-me img {
-    height: max-content;
-    width: max-content;
+    height: 25rem;
+    width: auto;
 }
 
 .about-me h1 {
@@ -86,6 +107,10 @@ a:hover {
 
 .email-button:hover {
     background-color: #388af6;
+}
+
+.info-container {
+    max-width: 50%;
 }
 
 /* All styles related to the My Projects section */
@@ -136,9 +161,9 @@ a:hover {
     display: flex;  
 }
 
-/* All styles related to the My Skills section */
+/* All styles related to the My Certifications section */
 
-.skill-showcase {
+.certifications-showcase {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -148,19 +173,20 @@ a:hover {
     padding-bottom: 100px;
 }
 
-.skill-showcase h1 {
+.certifications-showcase h1 {
     color: #1F2937;
     font-weight: bolder;
+    padding-bottom: 20px;
 }
 
-.skill-showcase p {
+.certifications-showcase p {
     color: #1F2937;
     font-size: 18px;
 }
 
-/* All styles related to the Resume Request section */
+/* All styles related to the My Skills section */
 
-.resume-request {
+.skills-showcase {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,26 +195,56 @@ a:hover {
     padding-bottom: 100px;
 }
 
-.form-container {
-    background-color: #3882F6;
-    border-radius: 10px;
-    padding: 20px 80px;
-    display: flex;
-    justify-content: flex-start;
+.carousel{
+width: 100vw;
+height: 100vh;
+position: relative;
 }
 
-.form-container h2,
-.form-container p {
-    color: #F9FAF8;
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
 }
 
-.form-container h2 {
-    font-size: 21px;
-    font-weight: bold;
+.slide[data-active]{
+    opacity: 1;
 }
 
-.form-container p {
-    font-size: 16px;
+.carousel-button{
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #1F2937;
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 0.5rem;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+}
+
+.carousel-button:focus {
+    outline: 1px solid black;
+}
+
+.carousel-button.previous {
+    left: 1rem;
+}
+
+.carousel-button.next{
+    right: 1rem;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 /* All styles related to the Footer section */
