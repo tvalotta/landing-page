@@ -2,6 +2,7 @@
 
 html, body {
     min-height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -240,6 +241,140 @@ a:hover {
     width: 125px;
     border: #3882F6 solid 3px;
     border-radius: 10px;
+}
+
+/* All styles related to contact me section */
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.contact-wrapper{
+    max-width: 550px;
+    z-index: 15;
+    width: 100%;
+    background-color: #FFFF;
+    border-radius: 15px;
+    margin: 0 2px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0,0.2);
+}
+
+.contact-form{
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+.contact-form form{
+    width: 100%;
+}
+
+.contact-form .single-input{
+    height: 50px;
+    width: 95%;
+    margin: 17px 0px;
+    position: relative;
+}
+
+.contact-form .single-input input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    background: #f1f1f1;
+    border: 2px solid transparent;
+    transition: all .4s ease;
+}
+
+.contact-form .single-input input:focus,
+.contact-form .single-input input:valid{
+    border-color: #3882F6;
+    background-color: #FFF;
+}
+
+.contact-form .single-input label{
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #262626;
+    font-size: 16px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.4s ease;
+}
+
+.contact-form .single-input input:focus ~ label,
+.contact-form .single-input input:valid ~ label{
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color: #3882F6;
+    background: #fff;
+}
+
+.contact-form .box-area{
+    min-height: 100px;
+    position: relative;
+}
+
+.contact-form .box-area textarea{
+    position: absolute;
+    height: 100%;
+    width: 98%;
+    resize: none;
+    background: #f1f1f1;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.4s ease;
+}
+
+.contact-form .box-area textarea:focus{
+    border-color: #3882F6;
+    background: #fff;
+}
+
+.contact-form .box-area label{
+    position: absolute;
+    font-size: 16px;
+    color: #262626;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.4s ease;
+}
+
+.contact-form .box-area textarea:focus ~ label{
+    left: 12px;
+    top: -10px;
+    color: #3882F6;
+    font-size: 17px;
+    background: #FFF;
+}
+
+.contact-form .single-input input[type="submit"]{
+    color: #fff;
+    background: #3882F6;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+    border: none;
+}
+
+.contact-form .single-input input[type="submit"]:hover{
+    background-color: #0661f4;
 }
 
 
