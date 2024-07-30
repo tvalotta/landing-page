@@ -75,6 +75,22 @@ a:hover {
     stroke: #3882F6;
 }
 
+@media only screen and (max-width:768px) {
+    .header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .left-links{
+        padding-left: 0.2rem;
+    }
+
+    .right-links{
+        padding-right: 0.2rem;
+    }
+}
+
 /* All styles related to the About Me section */
 
 .about-me {
@@ -117,6 +133,17 @@ a:hover {
 
 .info-container {
     max-width: 50%;
+}
+
+@media only screen and (max-width:768px) {
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me img{
+        max-width: 100%;
+    }
 }
 
 /* All styles related to the My Projects section */
@@ -255,149 +282,79 @@ a:hover {
     padding-bottom: 100px;
 }
 
-.contact-wrapper{
-    max-width: 550px;
-    z-index: 15;
-    width: 100%;
+.contact-me h1{
+    padding-bottom: 20px;
+}
+
+.form-container{
     background-color: #FFFF;
-    border-radius: 15px;
-    margin: 0 2px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0,0.2);
+    padding: 2rem;
+    border-radius: 5px;
+    min-height: auto;
+    min-width: 50%
 }
-
-.contact-form{
+form{
     display: flex;
-    align-items: center;
-    padding: 25px 20px;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.contact-form form{
-    width: 100%;
-}
-
-.contact-form .single-input{
-    height: 50px;
-    width: 95%;
-    margin: 17px 0px;
-    position: relative;
-}
-
-.contact-form .single-input input{
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.form-inputs{
+    padding: 1rem;
     border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-    padding-left: 16px;
-    background: #f1f1f1;
     border: 2px solid transparent;
-    transition: all .4s ease;
+    outline: none;
+    background-color: #F1F1F1;
+    transition: border-color 0.3s ease;
 }
 
-.contact-form .single-input input:focus,
-.contact-form .single-input input:valid{
+.form-inputs:focus{
     border-color: #3882F6;
-    background-color: #FFF;
 }
 
-.contact-form .single-input label{
-    position: absolute;
-    left: 18px;
-    top: 50%;
-    color: #262626;
-    font-size: 16px;
-    pointer-events: none;
-    transform: translateY(-50%);
-    transition: all 0.4s ease;
+input::placeholder,
+textarea::placeholder{
+    color: black;
+    font-family: Roboto;
 }
 
-.contact-form .single-input input:focus ~ label,
-.contact-form .single-input input:valid ~ label{
-    top: 0;
-    left: 12px;
-    display: 14px;
-    color: #3882F6;
-    background: #fff;
-}
-
-.contact-form .box-area{
-    min-height: 100px;
-    position: relative;
-}
-
-.contact-form .box-area textarea{
-    position: absolute;
-    height: 100%;
-    width: 98%;
+textarea{
     resize: none;
-    background: #f1f1f1;
-    border: 2px solid transparent;
-    border-radius: 5px;
-    outline: none;
-    transition: all 0.4s ease;
+    font-family: Roboto;
 }
 
-.contact-form .box-area textarea:focus{
-    border-color: #3882F6;
-    background: #fff;
-}
-
-.contact-form .box-area label{
-    position: absolute;
-    font-size: 16px;
-    color: #262626;
-    left: 18px;
-    top: 6px;
-    pointer-events: none;
-    transition: all 0.4s ease;
-}
-
-.contact-form .box-area textarea:focus ~ label{
-    left: 12px;
-    top: -10px;
-    color: #3882F6;
-    font-size: 17px;
-    background: #FFF;
-}
-
-.contact-form .single-input input[type="submit"]{
-    color: #fff;
-    background: #3882F6;
-    padding-left: 0;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    letter-spacing: 1px;
-    transition: all 0.5s ease;
+input[type="submit"]{
+    background-color: #3882F6;
     border: none;
+    color: #F1F1F1;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
 }
 
-.contact-form .single-input input[type="submit"]:hover{
-    background-color: #0661f4;
+input[type="submit"]:hover{
+    background-color: #0766fe;
 }
-
-
 
 /* All styles related to the Footer section */
 .footer {
     display: flex;
-    background-color: #1F2937;
-    justify-content: flex-end;
+    background-color: #E5E7EB;
+    justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
 }
 
 .footer a {
-    color: #E5E7EB;
+    color: black;
     text-decoration: none;
-    padding-right: 90px;
 }
 
 a:hover {
-    text-decoration: underline #E5E7EB;
+    text-decoration: underline black;
 }
 
 .footer p {
     color: #E5E7EB;
-    font-size: 16px;
+    font-size: 2rem;
 }
